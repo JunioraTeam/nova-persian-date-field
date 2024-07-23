@@ -38,9 +38,6 @@ class PersianDateTime extends Field implements FilterableField
             if (! is_null($value)) {
                 if ($value instanceof DateTimeInterface) {
 					return $value->format('Y-m-d H:i');
-                    // return $value instanceof CarbonInterface
-                    //             ? $value->toIso8601String()
-                    //             : $value->format('Y-m-d H:i');
                 }
 
                 throw new Exception("Date field must cast to 'datetime' in Eloquent model.");
@@ -60,9 +57,6 @@ class PersianDateTime extends Field implements FilterableField
 
         if ($value instanceof DateTimeInterface) {
 			return $value->format('Y-m-d H:i');
-            // return $value instanceof CarbonInterface
-            //             ? $value->toIso8601String()
-            //             : $value->format('Y-m-d H:i');
         }
 
         return $value;
