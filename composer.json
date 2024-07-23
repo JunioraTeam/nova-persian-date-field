@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Amid\\Nova\\Fields\\FieldServiceProvider"
+                "Juniora\\Nova\\Fields\\FieldServiceProvider"
             ]
         }
     },
