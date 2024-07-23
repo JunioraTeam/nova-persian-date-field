@@ -51,7 +51,7 @@ class PersianDate extends Field implements FilterableField
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return string
      */
-    protected function resolveDefaultValue(NovaRequest $request)
+    public function resolveDefaultValue(NovaRequest $request)
     {
         $value = parent::resolveDefaultValue($request);
 
