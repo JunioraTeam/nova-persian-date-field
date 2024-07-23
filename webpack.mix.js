@@ -7,4 +7,4 @@ mix
   .js('resources/js/field.js', 'js')
   .vue({ version: 3 })
   .css('resources/css/field.css', 'css')
-  .nova('amid/persian-date-field')
+  .nova('juniora/persian-date-field')

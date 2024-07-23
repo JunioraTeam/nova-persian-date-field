@@ -1,5 +1,6 @@
 <?php
-namespace Amid\Nova\Fields;
+
+namespace Juniora\Nova\Fields;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

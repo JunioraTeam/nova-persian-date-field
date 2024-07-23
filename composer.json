@@ -1,5 +1,5 @@
 {
-    "name": "amidesfahani/nova-persian-date-field",
+    "name": "juniora/nova-persian-date-field",
     "description": "Laravel Nova Persian Datetime Picker",
     "keywords": [
         "laravel",
@@ -23,7 +23,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Amid\\Nova\\Fields\\": "src/"
+            "Juniora\\Nova\\Fields\\": "src/"
         }
     },
     "extra": {

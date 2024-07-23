@@ -1,5 +1,5 @@
 <?php
-namespace Amid\Nova\Fields;
+namespace Juniora\Nova\Fields;
 
 use Carbon\CarbonInterface;
 use DateTimeInterface;

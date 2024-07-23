@@ -1,13 +1,11 @@
 # nova-persian-date
 Laravel Nova Persian Date Field
 
-If you are using Nova 3, please refer to [this repository](https://github.com/amidesfahani/nova-persian-date).
-
 ## Installation
 You can install the package via composer:
 
 ```bash
-composer require amidesfahani/nova-persian-date-field
+composer require juniora/nova-persian-date-field
 ```
 The package will automatically register itself.
 
