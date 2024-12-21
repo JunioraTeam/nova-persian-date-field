@@ -5,22 +5,6 @@
         <span v-if="field.humanize" class="inline-flex items-center">
           <span class="inline-block">{{ formattedDate }}</span>
           <span class="ltr inline-flex items-center text-gray-400 text-xs ml-3">
-            <span>
-              <svg
-                class="w-6 h-6 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                ></path>
-              </svg>
-            </span>
             <span class="mr-1 ml-1 ltr inline-block">{{ formattedValue }}</span>
           </span>
         </span>
