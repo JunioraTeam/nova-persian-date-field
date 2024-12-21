@@ -37,7 +37,7 @@ class PersianDateTime extends Field implements FilterableField
         parent::__construct($name, $attribute, $resolveCallback ?? function ($value) {
             if (! is_null($value)) {
                 if ($value instanceof DateTimeInterface) {
-					return $value->format('Y-m-d H:i');
+                    return $value->format('Y-m-d H:i');
                 }
 
                 throw new Exception("Date field must cast to 'datetime' in Eloquent model.");
@@ -49,14 +49,14 @@ class PersianDateTime extends Field implements FilterableField
      * Resolve the default value for the field.
      *
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @return string
+     * @return mixed
      */
-    public function resolveDefaultValue(NovaRequest $request)
+    public function resolveDefaultValue(NovaRequest $request): mixed
     {
         $value = parent::resolveDefaultValue($request);
 
         if ($value instanceof DateTimeInterface) {
-			return $value->format('Y-m-d H:i');
+            return $value->format('Y-m-d H:i');
         }
 
         return $value;
@@ -99,7 +99,7 @@ class PersianDateTime extends Field implements FilterableField
      *
      * @return array
      */
-    public function serializeForFilter()
+    public function serializeForFilter(): array
     {
         return transform($this->jsonSerialize(), function ($field) {
             return Arr::only($field, [

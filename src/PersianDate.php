@@ -50,9 +50,9 @@ class PersianDate extends Field implements FilterableField
      * Resolve the default value for the field.
      *
      * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
-     * @return string
+     * @return mixed
      */
-    public function resolveDefaultValue(NovaRequest $request)
+    public function resolveDefaultValue(NovaRequest $request): mixed
     {
         $value = parent::resolveDefaultValue($request);
 
@@ -100,7 +100,7 @@ class PersianDate extends Field implements FilterableField
      *
      * @return array
      */
-    public function serializeForFilter()
+    public function serializeForFilter(): array
     {
         return transform($this->jsonSerialize(), function ($field) {
             return Arr::only($field, [
